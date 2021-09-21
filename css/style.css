@@ -1,0 +1,24 @@
+
+/* CSS for navbar*/
+.navbar-customclass {
+    background-color: #F4EB49;
+}
+/* changing brand text color*/
+.navbar-customclass .navbar-brand,
+.navbar-customclass .navbar-text {
+    color: #000000;
+}
+/* navigation link text color */
+.navbar-customclass .navbar-nav .nav-link {
+    color: rgba(0,0,0,.6);
+}
+/* navigation links anchor hover and active styles */
+.navbar-customclass .nav-item.active .nav-link,
+.navbar-customclass .nav-item:hover .nav-link {
+    color: #000000;
+}
+
+#navbarSupportedContent{
+    margin-left: 15%;
+    margin-right: 15%;
+}
