@@ -80,9 +80,12 @@ if ( isset($_POST['email']) && isset($_POST['pass']) ) {
                 <li class="nav-item">
                     <a class="nav-link" href="productos.php">Promociones</a>
                 </li>
-                <li class="nav-item disabled">
-                    <a class="nav-link" href="login.php">Inicio de Sesión</a>
-                </li>
+                <?php if ($loggedin == 0){
+                    echo ("<li class='nav-item disabled'>
+                    <a class='nav-link' href='login.php'>Inicio de Sesión</a>
+                </li>" );
+                }?>   
+            
             </ul>
         </div>
         <?php
