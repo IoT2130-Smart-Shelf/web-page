@@ -36,9 +36,11 @@ else {$session_status = 'Cerrar sesión';
                 <li class="nav-item">
                     <a class="nav-link" href="promociones.php">Promociones</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="login.php">Inicio de Sesión</a>
-                </li>
+                <?php if ($loggedin == 0){
+                    echo ("<li class='nav-item disabled'>
+                    <a class='nav-link' href='login.php'>Inicio de Sesión</a>
+                </li>" );
+                }?> 
             </ul>
         </div>
         <?php
