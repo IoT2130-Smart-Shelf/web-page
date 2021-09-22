@@ -48,7 +48,7 @@ else {$session_status = 'Cerrar sesión';
                 echo(htmlentities($session_status));
             }
             else {
-                echo("<a class='nav-link' href='logout.php'>Cerrar sesión</a>");
+                echo("<a class='nav-link' href='logout.php'>$session_status</a>");
             }
             
         ?>
