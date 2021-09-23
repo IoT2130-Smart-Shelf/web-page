@@ -64,28 +64,27 @@ if ( isset($_POST['email']) && isset($_POST['pass']) ) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<?php include("navbar.php")?>
+    <?php include("navbar.php")?>
 
-<div class="container">
-<h1>Inicie sesión</h1>
-
-<?php
-if ( isset($_SESSION['error']) ) {
-    echo('<p style="color: red;">'.htmlentities($_SESSION['error'])."</p>\n");
-    unset($_SESSION['error']);
-}
-?>
-<div class="login-form">
-<form method="POST">
-<label for="nam">Nombre de usuario</label>
-<input type="text" name="email" id="nam"><br/>
-<label for="id_1723">Contraseña</label>
-<input type="text" name="pass" id="id_1723"><br/>
-<input type="submit" value="Iniciar sesión">
-<input type="submit" name="cancel" value="Cancelar">
-</form>
-</div>
-
-</div>
+    <?php
+    if ( isset($_SESSION['error']) ) {
+        echo '<p style="color: red;">'.htmlentities($_SESSION['error'])."</p>\n";
+        unset($_SESSION['error']);
+    }
+    ?>
+        <form class="form-login" method="POST">
+            <div class="form-group">
+                <label for="nam">Nombre de usuario</label>
+                <input type="text" name="email" class="form-control" id="nam" placeholder="Ingrese el usuario"><br/>
+            </div>
+            <div class="form-group">
+                <label for="id_1723">Contraseña</label>
+                <input type="text" name="pass" id="id_1723" class="form-control" placeholder="Ingrese la contraseña"><br/>
+            </div>
+            <div class="form-check">
+                <input type="submit" value="Iniciar sesión">
+                <input type="submit" name="cancel" value="Cancelar">
+            </div>
+        </form>
 </body>
 </html>

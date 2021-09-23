@@ -1,6 +1,23 @@
+.form-login {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.form-add-product {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+#buttonAddProduct{ 
+    border: solid #e6e6e6; 
+    color: black;
+}
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e6e6e6;
 }
 /* CSS for navbar*/
 .navbar-customclass {
@@ -19,11 +36,6 @@ body {
 .navbar-customclass .nav-item.active .nav-link,
 .navbar-customclass .nav-item:hover .nav-link {
     color: #000000;
-}
-
-#navbarSupportedContent{
-    /*margin-left: 15%;
-    margin-right: 15%;*/
 }
 
 #title-box, #function {
