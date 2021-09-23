@@ -66,38 +66,7 @@ if ( isset($_POST['email']) && isset($_POST['pass']) ) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-customclass navbar-expand-lg">
-        <a class="navbar-brand" href="index.php">Smart Shelf</a>
-        <a class="navbar-brand" href="#">Maxi Despensa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="promociones.php">Productos <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="productos.php">Promociones</a>
-                </li>
-                <?php if ($loggedin == 0){
-                    echo ("<li class='nav-item disabled'>
-                    <a class='nav-link' href='login.php'>Inicio de Sesión</a>
-                </li>" );
-                }?>   
-            
-            </ul>
-        </div>
-        <?php
-            if ($loggedin == 0) {
-                echo(htmlentities($session_status));
-            }
-            else {
-                echo("<a class='nav-link' href='logout.php'>$session_status</a>");
-            }
-            
-        ?>
-    </nav>
+<?php include("navbar.php")?>
 
 <div class="container">
 <h1>Inicie sesión</h1>
@@ -109,6 +78,7 @@ if ( isset($_SESSION['error']) ) {
 }
 ?>
 
+<div id="login-form">
 <form method="POST">
 <label for="nam">Nombre de usuario</label>
 <input type="text" name="email" id="nam"><br/>
@@ -117,7 +87,7 @@ if ( isset($_SESSION['error']) ) {
 <input type="submit" value="Iniciar sesión">
 <input type="submit" name="cancel" value="Cancelar">
 </form>
-
+</div>
 
 </div>
 </body>
