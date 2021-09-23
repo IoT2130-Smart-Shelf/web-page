@@ -1,4 +1,7 @@
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 /* CSS for navbar*/
 .navbar-customclass {
     background-color: #F4EB49;
@@ -21,4 +24,39 @@
 #navbarSupportedContent{
     /*margin-left: 15%;
     margin-right: 15%;*/
+}
+
+#title-box {
+    text-align: center;
+    background-color: lightgrey;
+    border: 30px lightgrey;
+    margin: 20px;
+}
+
+#img-info {
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+.img2s{
+    max-width: 49%;
+    height: auto;
+    float: left;
+}
+
+.info {
+    float: right;
+    max-width: 49%;
+    text-align: left;
+}
+
+.container {
+    display:
+    flex;
+}
+
+#login-form {
+    
+    margin:auto;
 }
