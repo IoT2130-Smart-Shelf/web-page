@@ -8,7 +8,8 @@ if (!isset($_SESSION['name'])){
 }
 else {$session_status = 'Cerrar sesión';
     $loggedin = 1; }
-//Fall through the view
+
+//Fall through into the view
 ?>
 
 <!DOCTYPE html>
@@ -47,16 +48,21 @@ else {$session_status = 'Cerrar sesión';
 
 <div id="function">
     <h1>¿Cómo funciona Smart Shelf?</h1>
-    <p>Sistema de control y monitoreo de estanterías</p>
 </div>
 
 <div id="architecture">
 
-<img class="gif-show1" src="images/Imagen1.gif" alt="Gif con arquitectura de alto nivel">
+<img class="gif-show1" src="images/highlevel.gif" alt="Gif con arquitectura de alto nivel">
+
+<p class="descript">Smart Shelf implementa un sistema IoT compuesto de sensores de distancia de ultrasonido, sensores de tiempo de vuelo y cámaras,
+        todo localizado en una Raspberry Pi 3B+. Utiliza pantallas como etiquetas de precio electrónicas e integra la interacción del usuario a través 
+        de la plataforma web.
+</p>
 
 <img class="gif-show2" src="images/Imagen2.gif" alt="Gif con arquitectura de alto nivel parte 2">
 
 
 </div>
+
 </body>
 </html>

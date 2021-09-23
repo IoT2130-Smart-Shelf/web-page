@@ -36,6 +36,7 @@ body {
 #img-info {
     margin: 20px;
     overflow: hidden;
+    display: flex;
 }
 
 
@@ -48,8 +49,12 @@ body {
 .info {
     float: left;
     max-width: 50%;
-    text-align: justify;
+    text-align: center;
+    margin: 5px;
     padding: 20px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 1%;
+    justify-content: center; align-items: center;
 }
 
 .imgzoom {
@@ -69,17 +74,30 @@ body {
 #architecture {
     margin: 20px;
     overflow: hidden;
+    display: flex;
 }
 
 
 .gif-show1{
-    max-width: 49%;
+    max-width: 35%;
     height: auto;
     float: left;
 }
 
 .gif-show2 {
     float: right;
-    max-width: 49%;
-    text-align: left;
+    max-width: 42%;
+    height: auto;
+}
+
+.descript{
+    float: left;
+    max-width: 22%;
+    text-align: center;
+    margin: 5px;
+    padding: 20px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 1%;
+    justify-content: center; align-items: center;
+    vertical-align: middle;
 }
