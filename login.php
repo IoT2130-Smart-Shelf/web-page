@@ -5,8 +5,6 @@ if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to game.php
     header("Location: index.php");
     return;
-
-
 }
 
 if (!isset($_SESSION['name'])){
@@ -77,8 +75,7 @@ if ( isset($_SESSION['error']) ) {
     unset($_SESSION['error']);
 }
 ?>
-
-<div id="login-form">
+<div class="login-form">
 <form method="POST">
 <label for="nam">Nombre de usuario</label>
 <input type="text" name="email" id="nam"><br/>

@@ -26,7 +26,7 @@ body {
     margin-right: 15%;*/
 }
 
-#title-box {
+#title-box, #function {
     text-align: center;
     background-color: lightgrey;
     border: 30px lightgrey;
@@ -40,23 +40,46 @@ body {
 
 
 .img2s{
-    max-width: 49%;
+    max-width: 25%;
     height: auto;
     float: left;
 }
 
 .info {
+    float: left;
+    max-width: 50%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.imgzoom {
+    float: right;
+    max-width: 25%;
+    height: auto;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+
+#architecture {
+    margin: 20px;
+    overflow: hidden;
+}
+
+
+.gif-show1{
+    max-width: 49%;
+    height: auto;
+    float: left;
+}
+
+.gif-show2 {
     float: right;
     max-width: 49%;
     text-align: left;
 }
-
-.loginform {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border: 5px solid #FFFF00;
-    padding: 10px;
-}
-

@@ -30,7 +30,7 @@ else {$session_status = 'Cerrar sesión';
 </div>
 
 <div id="img-info">
-    <img class="img2s"src="images/twoshelves.png" alt="Render of smart shelf">
+    <img class="img2s" src="images/twoshelves.png" alt="Render of smart shelf">
     
     <p class="info">  Smart Shelf es un sistema de control y monitoreo de estanterías en tiendas como supermercados y minimercados. Se implementan 
     etiquetas de precio electrónicas, eliminando la necesidad de imprimir y reemplazar etiquetas de papel. Por otro lado, se implementa un monitoreo 
@@ -41,7 +41,22 @@ else {$session_status = 'Cerrar sesión';
     falta productos. En este mismo sitio es también posible consultar tendencias de precios e información sobre los productos que se agotan con mayor 
     frecuencia en las estanterías, teniendo en cuenta los días y las horas en las que los clientes los retiran.
     </p> 
+
+    <img class="imgzoom" src="images/zoom shelf.png" alt="Render of smart shelf">
 </div>
 
+<div id="function">
+    <h1>¿Cómo funciona Smart Shelf?</h1>
+    <p>Sistema de control y monitoreo de estanterías</p>
+</div>
+
+<div id="architecture">
+
+<img class="gif-show1" src="images/Imagen1.gif" alt="Gif con arquitectura de alto nivel">
+
+<img class="gif-show2" src="images/Imagen2.gif" alt="Gif con arquitectura de alto nivel parte 2">
+
+
+</div>
 </body>
 </html>
