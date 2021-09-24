@@ -1,6 +1,7 @@
 <?php // Do not put any HTML above this line
 
 session_start();
+
 if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to game.php
     header("Location: index.php");

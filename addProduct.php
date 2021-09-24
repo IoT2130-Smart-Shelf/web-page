@@ -1,7 +1,5 @@
 <?php 
     session_start();
-    include('includes/dbconfig.php');
-
     if(isset($_POST['save_push_data'])){
         $quantity = $_POST['quantityProduct'];
         $producer = $_POST['producerProduct'];
@@ -34,6 +32,7 @@
             header("Location: addProduct.php");
         }
     }
+
 ?>
 
 <!DOCTYPE html>
