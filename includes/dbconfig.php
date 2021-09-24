@@ -9,5 +9,6 @@ $firebase = (new Factory)
     ->withDatabaseUri('https://smart-shelf-44c69-default-rtdb.firebaseio.com/');
 
 $database = $firebase->createDatabase();
+$auth = $firebase->createAuth();
 
 ?>

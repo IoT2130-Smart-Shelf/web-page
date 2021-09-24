@@ -1,3 +1,12 @@
+<?php 
+
+if(isset($_SESSION['loggedin'])){
+$loggedin = 1;
+$session_status = 'Cerrar sesión';
+}else {$loggedin=0;
+    $session_status = 'Sin inicio de sesión';}
+?> 
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

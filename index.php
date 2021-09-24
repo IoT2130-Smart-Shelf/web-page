@@ -2,13 +2,6 @@
 
 session_start();
 
-if (!isset($_SESSION['name'])){
-    $loggedin = 0;
-    $session_status = 'Sin inicio de sesión';
-}
-else {$session_status = 'Cerrar sesión';
-    $loggedin = 1; }
-
 //Fall through into the view
 ?>
 
