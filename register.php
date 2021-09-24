@@ -2,6 +2,6 @@
 
 include('includes/dbconfig.php');
 
-$reference = $database->getReference('test');
+$reference = $database->getReference('/test');
 echo "<h1>". $reference->getValue()."</h1>";
 ?>
