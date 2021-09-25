@@ -61,15 +61,22 @@ if (isset($_POST['login_btn'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Inicio de Sesión</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Inicio de sesión</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
-    <?php include("navbar.php")?>
+
+<body class="d-flex flex-column h-100">
+
+<main class="flex-shrink-0">
+    <?php include("navbar.php");?>
 
     
         <form class="form-login" method="POST">
@@ -101,6 +108,6 @@ if (isset($_POST['login_btn'])){
             <br></br>
         <p> ¿No tiene una cuenta? <a href="register.php">Registrese aquí</a>
         </form>
-        
+</main>       
 </body>
 </html>

@@ -50,13 +50,21 @@ if(isset($_POST['reg_btn'])){
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Registro de Usurio</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Inicio de sesión</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
+
+<body class="d-flex flex-column h-100">
+
+<main class="flex-shrink-0">
 <body>
     <?php include("navbar.php")?>
 
@@ -83,6 +91,6 @@ if(isset($_POST['reg_btn'])){
                 <input type="submit" name="cancel" value="Cancelar">
             </div>
         </form>
-        
+</main>       
 </body>
 </html>

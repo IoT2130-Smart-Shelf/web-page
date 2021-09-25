@@ -8,54 +8,110 @@ session_start();
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Smart Shelf</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Smart Shelf Home</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body>
-<?php include("navbar.php")?>
+<body class="d-flex flex-column h-100">
 
-<div id="title-box">
-    <h1>Smart Shelf</h1>
-    <p>Sistema de control y monitoreo de estanterías</p>
-</div>
+<main class="flex-shrink-0">
 
-<div id="img-info">
-    <img class="img2s" src="images/twoshelves.png" alt="Render of smart shelf">
-    
-    <p class="info">  Smart Shelf es un sistema de control y monitoreo de estanterías en tiendas como supermercados y minimercados. Se implementan 
-    etiquetas de precio electrónicas, eliminando la necesidad de imprimir y reemplazar etiquetas de papel. Por otro lado, se implementa un monitoreo 
-    de los estantes utilizando cámaras y sensores de distancia con tecnologías de ultrasonido y láser, con el cual se notifica cuando sea necesario 
-    reaprovisionar los productos en una estantería específica o cuando un producto está ubicado en el estante incorrecto.
+<?php include("navbar.php");?>
 
-    Por medio del sitio web, la persona encargada de la tienda puede actualizar la información de las etiquetas de manera remota y verificar si hacen 
-    falta productos. En este mismo sitio es también posible consultar tendencias de precios e información sobre los productos que se agotan con mayor 
-    frecuencia en las estanterías, teniendo en cuenta los días y las horas en las que los clientes los retiran.
-    </p> 
+<!-- Header-->
+<header class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder text-white mb-2">Smart Shelf</h1>
+                    <p class="lead fw-normal text-white-50 mb-4">Implementamos un sistema IoT para el control y monitoreo de estanterías para tu supermercado o minimercado. </p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="images/shelf.jpg" alt="estante supermercado" /></div>
+        </div>
+    </div>
+</header>
 
-    <img class="imgzoom" src="images/zoom shelf.png" alt="Render of smart shelf">
-</div>
+<!-- Function one-->
+<section class="py-5" id="scroll-target">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/pricetag.png" alt="electronic price tag" /></div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Etiquetas de precio electrónicas</h2>
+                <p class="lead fw-normal text-muted mb-0">Instalamos etiquetas de precio electrónicas para ser actualizadas de manera remota.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Function two-->
+<section class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/restock.webp" alt="Reabastecimiento" /></div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Monitoreo de estantes</h2>
+                <p class="lead fw-normal text-muted mb-0">Recibe alertas cuando sea necesario reabastecer los estantes.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<div id="function">
-    <h1>¿Cómo funciona Smart Shelf?</h1>
-</div>
 
-<div id="architecture">
+<!-- Function three-->
+<section class="py-5" id="scroll-target">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/pricetag.png" alt="electronic price tag" /></div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Plataforma de usuario</h2>
+                <p class="lead fw-normal text-muted mb-0">Modifica los precios, recibe notificaciones para reabastecer y encuentra analítica de datos
+                    desde nuestra plataforma web.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 
-<img class="gif-show1" src="images/highlevel.gif" alt="Gif con arquitectura de alto nivel">
+<header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">Nuestra misión es ahorrarte tiempo y recursos para la administración de tus estantes</h1>
+                    <p class="lead fw-normal text-muted mb-4">Smart Shelf es una solución IoT basada en sensores, procesamiento de imágenes y almacenamiento de datos en la nube.</p>
+                    <a class="btn btn-primary btn-lg" href="about.php">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Footer -->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Smart Shelf 2021</div></div>
+           
+             <!-- <div class="col-auto">
+                <a class="link-light small" href="#!">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contact</a>
+            </div>  -->
+        </div>
+    </div>
+</footer>
 
-<p class="descript">Smart Shelf implementa un sistema IoT compuesto de sensores de distancia de ultrasonido, sensores de tiempo de vuelo y cámaras,
-        todo localizado en una Raspberry Pi 3B+. Utiliza pantallas como etiquetas de precio electrónicas e integra la interacción del usuario a través 
-        de la plataforma web.
-</p>
-
-<img class="gif-show2" src="images/Imagen2.gif" alt="Gif con arquitectura de alto nivel parte 2">
-
-
-</div>
-
+</main>
 </body>
 </html>
