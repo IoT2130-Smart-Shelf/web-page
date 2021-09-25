@@ -68,7 +68,7 @@ session_start();
 
 
 <!-- Function three-->
-<section class="py-5" id="scroll-target">
+<section class="py-5">
     <div class="container px-5 my-5">
         <div class="row gx-5 align-items-center">
             <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/pricetag.png" alt="electronic price tag" /></div>
@@ -81,20 +81,22 @@ session_start();
         </div>
     </div>
 </section>
-
-<header class="py-5">
-    <div class="container px-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-xxl-6">
-                <div class="text-center my-5">
-                    <h1 class="fw-bolder mb-3">Nuestra misión es ahorrarte tiempo y recursos para la administración de tus estantes</h1>
-                    <p class="lead fw-normal text-muted mb-4">Smart Shelf es una solución IoT basada en sensores, procesamiento de imágenes y almacenamiento de datos en la nube.</p>
-                    <a class="btn btn-primary btn-lg" href="about.php">Conoce más</a>
-                </div>
+<div class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 justify-content-center">
+        <div class="col-lg-8 col-xxl-6">
+            <div class="text-center">
+                <h1 class="fw-bolder mb-3">Nuestra misión es ahorrarte tiempo y recursos para la administración de tus estantes</h1>
+                <p class="lead fw-normal text-muted mb-4">Smart Shelf es una solución IoT basada en sensores, procesamiento de imágenes y almacenamiento de datos en la nube.</p>
+                <a class="btn btn-primary btn-lg" href="about.php">Conoce más</a>
             </div>
         </div>
+        </div>
     </div>
-</header>
+</div>
+
+
+</main>
 <!-- Footer -->
 <footer class="bg-dark py-4 mt-auto">
     <div class="container px-5">
@@ -112,6 +114,5 @@ session_start();
     </div>
 </footer>
 
-</main>
 </body>
 </html>
