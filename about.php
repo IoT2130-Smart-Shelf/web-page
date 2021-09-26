@@ -41,33 +41,45 @@ session_start();
     </div>
 </header>
 
+<!-- About assemby-->
+<section class="py-5 bg-light">
+    <div class="container px-5 my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="images/zoomshelf.png" alt="Reabastecimiento" /></div>
+            <div class="col-lg-6">
+                <h2 class="fw-bolder">Instalación del sistema</h2>
+                <p class="lead fw-normal text-muted mb-0">Instalamos nuestro sistema en tus estantes.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Features section-->
 <section class="py-5" id="features">
     <div class="container px-5 my-5">
         <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
+            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Sobre nuestra solución</h2></div>
             <div class="col-lg-8">
                 <div class="row gx-5 row-cols-1 row-cols-md-2">
                     <div class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-camera"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-tag"></i></div>
+                        <h2 class="h5">Actualización de precios</h2>
+                        <p class="mb-0">Actualiza precios e información de las etiquetas de manera remota.</p>
                     </div>
                     <div class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cloud"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-exclamation-circle"></i></div>
+                        <h2 class="h5">Alertas de desabastecimiento</h2>
+                        <p class="mb-0">Recibe notificaciones para reabastecimiento.</p>
                     </div>
                     <div class="col mb-5 mb-md-0 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-bar-graph"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cloud"></i></div>
+                        <h2 class="h5">Almacenamiento de datos en la nube</h2>
+                        <p class="mb-0">Nuestros sensores transmiten a la nube toda su información.</p>
                     </div>
                     <div class="col h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-bar-graph"></i></div>
+                        <h2 class="h5">Analítica de datos</h2>
+                        <p class="mb-0">Recibe reportes sobre la tendencia de los productos a agotarse en los estantes.</p>
                     </div>
                 </div>
             </div>
@@ -87,21 +99,21 @@ session_start();
                 <div class="text-center">
                     <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
                     <h5 class="fw-bolder">Sebastián Barreto</h5>
-                    <div class="fst-italic text-muted">Founder &amp; CEO</div>
+                    
                 </div>
             </div>
             <div class="col mb-5 mb-5 mb-xl-0">
                 <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="images/carolina.jpg" alt="Foto de Carolina Burgos" />
                     <h5 class="fw-bolder">Carolina Burgos</h5>
-                    <div class="fst-italic text-muted">CFO</div>
+                    
                 </div>
             </div>
             <div class="col mb-5 mb-5 mb-sm-0">
                 <div class="text-center">
                     <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
                     <h5 class="fw-bolder">Edwin Caicedo</h5>
-                    <div class="fst-italic text-muted">Operations Manager</div>
+                    
                 </div>
             </div>
 
