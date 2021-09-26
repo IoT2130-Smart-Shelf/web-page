@@ -97,21 +97,21 @@ session_start();
         <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
             <div class="col mb-5 mb-5 mb-xl-0">
                 <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="images/FotoSebastian.jpeg" alt="Foto de Sebastian Barreto" width="210"/>
                     <h5 class="fw-bolder">Sebastián Barreto</h5>
                     
                 </div>
             </div>
             <div class="col mb-5 mb-5 mb-xl-0">
                 <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" src="images/carolina.jpg" alt="Foto de Carolina Burgos" />
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="images/carolina.jpg" alt="Foto de Carolina Burgos" width="210"/>
                     <h5 class="fw-bolder">Carolina Burgos</h5>
                     
                 </div>
             </div>
             <div class="col mb-5 mb-5 mb-sm-0">
                 <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="Foto de Edwin Caicedo" width="210"/>
                     <h5 class="fw-bolder">Edwin Caicedo</h5>
                     
                 </div>
