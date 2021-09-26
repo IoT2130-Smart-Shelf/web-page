@@ -37,7 +37,7 @@ if(isset($_POST['reg_btn'])){
 
     }
     catch (Exception $e) {
-        $_SESSION['error'] = "El usuario ya existe";
+        $_SESSION['error'] = "Este correo se encuentra registrado";
         header('Location: register.php');
         return;
     }
