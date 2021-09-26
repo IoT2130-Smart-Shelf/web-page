@@ -1,7 +1,7 @@
 <?php // Do not put any HTML above this line
 
 session_start();
-include('includes/dbconfig.php'); //Include file for Firebase connection 
+include('includes/Kreait/dbconfig.php'); //Include file for Firebase connection 
 
 if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to index.php

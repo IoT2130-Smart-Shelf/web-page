@@ -2,81 +2,69 @@
 <html lang="en">
 <head>
     <?php include("navbar.php")?>
-    <title>Products</title>
+    <title>Productos</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
-    <link rel="stylesheet" href="css/style_products_catalog.css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles_products.css" rel="stylesheet" />
 </head>
-<body>
-    <br>
-    <br>
-    <div class="section">
-        <!-- <div class="container"> -->
-            <h2>Travelers Choice of Hotels</h2>
-            <div class="image-carousel style2 flexslider" data-animation="slide" data-item-width="270" data-item-margin="30">
-                <div class="flex-viewport" style="overflow: hidden; position: relative;">
-                    <ul class="slides image-box hotel listing-style1" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(0px, 0px, 0px);">
-                        <li style="width: 270px; float: left; display: block;">
-                            <article class="box">
-                                <figure> <a href="#" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="https://i.imgur.com/JN2wkb6.jpg" draggable="false"></a> </figure>
-                                <div class="details"> <span class="price"><small>avg/night</small>$188</span>
-                                    <h4 class="box-title">Hotel Hilton<small>Albufeira</small></h4>
-                                    <div class="feedback">
-                                        <div data-placement="bottom" data-toggle="tooltip" class="fa fa-star" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div> <span class="review">170 reviews</span>
-                                    </div>
-                                    <p class="description">For what reason would it be advisable for me to think about business content?</p>
-                                    <div class="action"> <a class="button btn-small" href="#">BOOK</a> <a class="button btn-small yellow popup-map" href="#" data-box="37.089072, -8.247880">VIEW ON MAP</a> </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="width: 270px; float: left; display: block;">
-                            <article class="box">
-                                <figure> <a href="#" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="https://i.imgur.com/JN2wkb6.jpg" draggable="false"></a> </figure>
-                                <div class="details"> <span class="price"><small>avg/night</small>$322</span>
-                                    <h4 class="box-title">Double Tree<small>New delhi</small></h4>
-                                    <div class="feedback">
-                                        <div data-placement="bottom" data-toggle="tooltip" class="fa fa-star" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div> <span class="review">485 reviews</span>
-                                    </div>
-                                    <p class="description">For what reason would it be advisable for me to think about business content?</p>
-                                    <div class="action"> <a class="button btn-small" href="#">BOOK</a> <a class="button btn-small yellow popup-map" href="#" data-box="40.463667, -3.749220">VIEW ON MAP</a> </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="width: 270px; float: left; display: block;">
-                            <article class="box">
-                                <figure> <a href="#" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="https://i.imgur.com/JN2wkb6.jpg" draggable="false"></a> </figure>
-                                <div class="details"> <span class="price"><small>avg/night</small>$170</span>
-                                    <h4 class="box-title">Hotel Taj<small>Mumbai</small></h4>
-                                    <div class="feedback">
-                                        <div data-placement="bottom" data-toggle="tooltip" class="fa fa-star" title="" data-original-title="4 stars"><span style="width: 80%;" class=""></span></div> <span class="review">75 reviews</span>
-                                    </div>
-                                    <p class="description">For what reason would it be advisable for me to think about business content?</p>
-                                    <div class="action"> <a class="button btn-small" href="#">BOOK</a> <a class="button btn-small yellow popup-map" href="#" data-box="40.705631, -73.978003">VIEW ON MAP</a> </div>
-                                </div>
-                            </article>
-                        </li>
-                        <li style="width: 270px; float: left; display: block;">
-                            <article class="box">
-                                <figure> <a href="#" class="hover-effect popup-gallery"><img width="270" height="160" alt="" src="https://i.imgur.com/JN2wkb6.jpg" draggable="false"></a> </figure>
-                                <div class="details"> <span class="price"> <small>avg/night</small> $360 </span>
-                                    <h4 class="box-title">Lamon Tree<small>Bangalore</small></h4>
-                                    <div class="feedback">
-                                        <div data-placement="bottom" data-toggle="tooltip" class="fa fa-star" title="" data-original-title="4 stars"><span style="width: 80%;" class="five-stars"></span></div> <span class="review">270 reviews</span>
-                                    </div>
-                                    <p class="description">For what reason would it be advisable for me to think about business content?</p>
-                                    <div class="action"> <a class="button btn-small" href="#">BOOK</a> <a class="button btn-small yellow popup-map" href="#" data-box="48.856614, 2.352222">VIEW ON MAP</a> </div>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
+    <body>
+        <?php
+        require_once 'includes/Google/GFirestone.php';
+
+        $fs = new GFirestore('Tiendas');
+
+        $store='MaxiDespensa';
+
+        $products = $fs->getProductos('MaxiDespensa');
+        ?>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Productos</h1>
+                    <p class="lead fw-normal text-white-50 mb-0"><?php echo $store?></p>
                 </div>
             </div>
-        <!-- </div> -->
-    </div>
-    <br>
-    <br>
-    <button type="button" class="btn btn-primary" ><a class="nav-link" href="addProduct.php">Agregar Producto</a></button>
-</body>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <?php 
+                    foreach ($products as $product){
+                    ?>
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Product image-->
+                                <img class="card-img-top" src="<?php echo $product["Imagen"];?>" alt="Foto producto"/>
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder"><?php echo $product["Nombre"]; echo " "; echo $product["Tamano"]; echo " "; echo $product["UnidadMedida"];?></h5>
+                                        <!-- Product price-->
+                                        <?php echo $product["Precio"]; echo ' COP';?>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver detalles</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php 
+                    } // end for products
+                    ?>
+                </div>
+            </div>
+        </section>
+        <?php include("footer.php");?>
+    </body>
 </html>
