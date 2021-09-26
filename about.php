@@ -50,17 +50,17 @@ session_start();
             <div class="col-lg-8">
                 <div class="row gx-5 row-cols-1 row-cols-md-2">
                     <div class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-camera"></i></div>
                         <h2 class="h5">Featured title</h2>
                         <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
                     </div>
                     <div class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-cloud"></i></div>
                         <h2 class="h5">Featured title</h2>
                         <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
                     </div>
                     <div class="col mb-5 mb-md-0 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-file-bar-graph"></i></div>
                         <h2 class="h5">Featured title</h2>
                         <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
                     </div>

@@ -100,6 +100,8 @@ if (isset($_POST['login_btn'])){
                 unset($_SESSION['success']);
             }
             ?>
+            
+            <p> <a href="pwreset.php">Olvidé mi contraseña</a>
             <div class="form-check">
                 <input type="submit" name="login_btn" value="Iniciar sesión">
                 <input type="submit" name="cancel" value="Cancelar">
@@ -107,6 +109,7 @@ if (isset($_POST['login_btn'])){
             
             <br></br>
         <p> ¿No tiene una cuenta? <a href="register.php">Registrese aquí</a>
+        
         </form>
 
 
