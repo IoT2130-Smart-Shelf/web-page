@@ -41,7 +41,7 @@ session_start();
     </div>
 </header>
 
-<!-- About assemby-->
+<!-- About assembly-->
 <section class="py-5 bg-light">
     <div class="container px-5 my-5">
         <div class="row gx-5 align-items-center">
