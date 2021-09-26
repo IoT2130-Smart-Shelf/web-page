@@ -1,14 +1,16 @@
 <?php // Do not put any HTML above this line
 
 session_start();
-include('includes/dbconfig.php');
+include('includes/dbconfig.php'); //Include file for Firebase connection 
 
 if ( isset($_POST['cancel'] ) ) {
-    // Redirect the browser to game.php
+    // Redirect the browser to index.php
     header("Location: index.php");
     return;
 }
 
+
+//When login  button is pressed
 
 if (isset($_POST['login_btn'])){
     $email = $_POST['email'];
@@ -51,9 +53,6 @@ if (isset($_POST['login_btn'])){
     }
 }
 
-
-
-
 // Fall through into the View
 ?>
 
@@ -78,7 +77,7 @@ if (isset($_POST['login_btn'])){
 <main class="flex-shrink-0">
     <?php include("navbar.php");?>
 
-    
+<!-- Login form -->    
         <form class="form-login" method="POST">
             <h1>Iniciar sesión</h1>
             
@@ -114,6 +113,7 @@ if (isset($_POST['login_btn'])){
 
 
 </main> 
+
 <!-- Footer -->
 <footer class="bg-dark py-4 mt-auto">
     <div class="container px-5">
