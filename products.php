@@ -2,7 +2,7 @@
 <?php
 
 session_start();
-
+include('includes/GFirestone.php');
 //Fall through into the view
 ?>
 
@@ -24,19 +24,15 @@ session_start();
 </head>
 
 
-<body class="d-flex flex-column h-100">
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
 
-<main class="flex-shrink-0">
-
-<?php include("navbar.php");?>
+        <?php include("navbar.php");?>
         <?php
-        require_once 'includes/Google/GFirestone.php';
         
-        $fs = new GFirestore('Tiendas');
-
         $store='MaxiDespensa';
-
-        $products = $fs->getProductos('MaxiDespensa');
+        $fs = new GFirestone($store);
+        $products = $fs->getProductos();
         ?>
         <!-- Header-->
         <header class="bg-dark py-5">

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+include('includes/dbconfig.php');
 //Fall through into the view
 ?>
 
