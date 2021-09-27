@@ -13,7 +13,6 @@ class GFirestore{
         $this->database = new FirestoreClient([
             'projectId' => 'smart-shelf-44c69'
         ]);
-
         $this->name = $collection;
         $this->collection_name = $this->database->collection($this->name);
     } // end construct
