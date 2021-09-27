@@ -1,5 +1,6 @@
 {
     "require": {
-        "kreait/firebase-php": "^5.23"
+        "kreait/firebase-php": "^5.23",
+        "grpc/grpc": "^1.38"
     }
 }

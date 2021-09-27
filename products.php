@@ -1,7 +1,14 @@
+<?php
+
+session_start();
+
+//Fall through into the view
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php include("navbar.php")?>
+    
     <title>Productos</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +21,13 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles_products.css" rel="stylesheet" />
 </head>
-    <body>
+
+
+<body class="d-flex flex-column h-100">
+
+<main class="flex-shrink-0">
+
+<?php include("navbar.php");?>
         <?php
         require_once 'includes/Google/GFirestone.php';
 
@@ -65,6 +78,8 @@
                 </div>
             </div>
         </section>
-        <?php include("footer.php");?>
+        </main>    
     </body>
+
+    <?php include("footer.php");?>
 </html>

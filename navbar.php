@@ -25,7 +25,7 @@ $session_status = 'Cerrar sesión';
                 </li>
                 <?php } 
                 else { ?>
-                   <li class="nav-item"><a class="nav-link" href="#">Maxi Despensa<span class="sr-only"></span></a></li>
+                   
                    <li class="nav-item"><a class="nav-link" href="products.php">Productos <span class="sr-only"></span></a></li>
                    <li class="nav-item"><a class="nav-link" href="promotions.php">Promociones</a></li>
                    <a class='nav-link' href='logout.php'>Cerrar sesión</a>
