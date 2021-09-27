@@ -1,6 +1,5 @@
 <?php 
 
-require_once 'vendor/autoload.php';
 use Google\Cloud\Firestore\FirestoreClient;
 
 class GFirestore{

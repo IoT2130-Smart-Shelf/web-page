@@ -111,7 +111,7 @@ session_start();
             </div>
             <div class="col mb-5 mb-5 mb-sm-0">
                 <div class="text-center">
-                    <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="Foto de Edwin Caicedo" width="210"/>
+                    <img class="img-fluid rounded-circle mb-4 px-4" src="images/edwin.jpeg" alt="Foto de Edwin Caicedo" width="210"/>
                     <h5 class="fw-bolder">Edwin Caicedo</h5>
                     
                 </div>

@@ -1,3 +1,4 @@
+
 <?php
 
 session_start();
@@ -30,7 +31,7 @@ session_start();
 <?php include("navbar.php");?>
         <?php
         require_once 'includes/Google/GFirestone.php';
-
+        
         $fs = new GFirestore('Tiendas');
 
         $store='MaxiDespensa';
