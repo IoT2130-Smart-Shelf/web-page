@@ -15,6 +15,18 @@ if(isset($_POST['reg_btn'])){
     $email = $_POST['email'];
     $password = $_POST['pass'];
     
+    // Validate password strength
+    $uppercase = preg_match('@[A-Z]@', $password);
+    $lowercase = preg_match('@[a-z]@', $password);
+    $number    = preg_match('@[0-9]@', $password);
+    $specialChars = preg_match('@[^\w]@', $password);
+
+    if(!$uppercase || !$lowercase || !$number || !$specialChars || strlen($password) < 8) {
+        $_SESSION['error'] = "La contraseña debe tener al menos ocho caracteres y debe incluir al menos una letra mayúscula, un número y un caracter especial.";
+        header('Location: register.php');
+        return;
+    }
+    
     $userProperties = [
         'email' => $email,
         'emailVerified' => false,
@@ -91,6 +103,8 @@ if(isset($_POST['reg_btn'])){
                 <input type="submit" name="cancel" value="Cancelar">
             </div>
         </form>
-</main>       
+</main> 
+
+<?php include("footer.php");?>
 </body>
 </html>
