@@ -48,7 +48,7 @@ include('includes/GFirestone.php');
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <?php 
-                    foreach ($products as $key => $product){
+                    foreach ($products as $product){
                     ?>
                         <div class="col mb-5">
                             <div class="card h-100">
@@ -65,13 +65,23 @@ include('includes/GFirestone.php');
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="editProduct.php?token=<?php echo $key;?>">Editar</a></div>
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="editProduct.php?token=<?php echo $product['Token'];?>">Editar</a></div>
                                 </div>
                             </div>
                         </div>
                     <?php 
                     } // end for products
                     ?>
+                    <?php
+                    if ( isset($_SESSION['error']) ) {
+                        echo '<p style="color: red;">'.htmlentities($_SESSION['error'])."</p>\n";
+                        unset($_SESSION['error']);
+                    }
+                    if (isset($_SESSION['success']) ) {
+                        echo '<p style="color: green;">'.htmlentities($_SESSION['success'])."</p>\n";
+                        unset($_SESSION['success']);
+                    }
+                ?>  
                 </div>
             </div>
         </section>

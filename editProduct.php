@@ -4,43 +4,17 @@ session_start();
 include('includes/GFirestone.php');
 include('includes/dbconfig.php');
 //Fall through into the view
-
-
-$token = $_GET["token"];
+$token = $_GET['token'];
         
 $store='MaxiDespensa';
 $fs = new GFirestone($store);
 $products = $fs->getProductos();
 
 
-
 if ( isset($_POST['cancel'] ) ) {
     // Redirect the browser to game.php
     header("Location: products.php");
     return;
-}
-
-if(isset($_POST['reg_btn'])){
-
-    try {
-
-    $prName = $_POST['prname'];
-    $prPrize = $_POST['prprize'];
-    $prQty = $_POST['prqty'];
-    $prTam = $_POST['prtam'];
-    $prUnt = $_POST['prunt'];
-    
- 
-
-
-    }
-    catch (Exception $e) {
-        $_SESSION['error'] = "Datos inválidos";
-        header('Location: editProduct.php');
-        return;
-    }
-    
-    
 }
 ?>
 
@@ -79,26 +53,35 @@ if(isset($_POST['reg_btn'])){
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-        <form class="form-login" method="POST">
+        <form class="form-login" action="codePut.php" method="POST">
+            <input type="hidden" name="token" value="<?php echo $token;?>">
             <div class="form-group">
                 <label for="nam">Nombre</label>
-                <input name="prname" class="form-control" id="nam" value="<?php echo $products[$token]['Nombre'];?>" placeholder="Ingrese nombre del producto"><br/>
+                <?php  
+                    foreach ($products as $product){
+                        if($product['Token'] == $token){
+                            $prod = $product;
+                            break;
+                        }
+                    }
+                ?>
+                <input name="prname" class="form-control" id="nam" value="<?php echo $prod['Nombre'];?>" placeholder="Ingrese nombre del producto"><br/>
             </div>
             <div class="form-group">
                 <label for="id_1723">Precio</label>
-                <input  name="prprize" id="id_1723" class="form-control" value="<?php echo $products[$token]['Precio'];?>" placeholder="Ingrese el precio"><br/>
+                <input  name="prprize" id="id_1723" class="form-control" value="<?php echo $prod['Precio'];?>" placeholder="Ingrese el precio"><br/>
             </div>
             <div class="form-group">
                 <label for="id_1723">Tamaño</label>
-                <input name="prtam" id="id_1723" class="form-control" value="<?php echo $products[$token]['Tamano'];?>" placeholder="Ingrese el tamaño"><br/>
+                <input name="prtam" id="id_1723" class="form-control" value="<?php echo $prod['Tamano'];?>" placeholder="Ingrese el tamaño"><br/>
             </div>
             <div class="form-group">
                 <label for="id_1723">Unidad de medida</label>
-                <input name="prunt" id="id_1723" class="form-control" value="<?php echo $products[$token]['UnidadMedida'];?>" placeholder="Ingrese la unidad de medida"><br/>
+                <input name="prunt" id="id_1723" class="form-control" value="<?php echo $prod['UnidadMedida'];?>" placeholder="Ingrese la unidad de medida"><br/>
             </div>
             <div class="form-group">
                 <label for="id_1723">Cantidad</label>
-                <input name="prqty" id="id_1723" class="form-control" value="<?php echo $products[$token]['Cantidad'];?>" placeholder="Ingrese la cantidad del producto en el estante"><br/>
+                <input name="prqty" id="id_1723" class="form-control" value="<?php echo $prod['Cantidad'];?>" placeholder="Ingrese la cantidad del producto en el estante"><br/>
             </div>
             <?php
             if ( isset($_SESSION['error']) ) {
@@ -108,7 +91,7 @@ if(isset($_POST['reg_btn'])){
 
             ?>
             <div class="form-check">
-                <input type="submit" name="reg_btn"value="Actualizar información">
+                <input type="submit" name="reg_btn" value="Actualizar información">
                 <input type="submit" name="cancel" value="Cancelar">
             </div>
         </form>   

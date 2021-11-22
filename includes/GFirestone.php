@@ -21,7 +21,8 @@ class GFirestone{
     public function getProductos(){
         $documents = $this->database->getReference('/Tiendas')->getValue()[$this->name]['Productos'];
         $products = [];
-        foreach ($documents as $document) {
+        foreach ($documents as $key => $document) {
+            $document['Token'] = $key;
             array_push($products, $document);
         }
         return $products;
