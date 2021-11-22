@@ -39,13 +39,15 @@ include('includes/GFirestone.php');
         </header>
         <!-- Section-->
         <section class="py-5">
-
+        <div class="container px-4 px-lg-5 mt-5">
             <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1481979/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Sensor+Ultrasonido+1&type=line&xaxis=Fecha&yaxis=Distancia+%28cm%29"></iframe>
 
             <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1481979/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Sensor+Ultrasonido+2&type=line&xaxis=Fecha&yaxis=Distancia+%28cm%29"></iframe>
 
             <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1481979/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Sensor+Ultrasonido+3&type=line"></iframe>
             
+            <p>Para ver la última imagen registrada por el detector de objetos, ingrese <a href="https://www.dropbox.com/s/wcx3uaqrgvab6le/last_shelf.jpg?dl=0" target="_blank">aquí</a></p>
+            </div>
         </section>
         </main>    
     </body>
