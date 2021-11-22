@@ -89,6 +89,7 @@ if(isset($_POST['reg_btn'])){
             </div>
             <div class="form-group">
                 <label for="id_1723">Contraseña</label>
+                <p>La contraseña debe tener al menos ocho caracteres y debe incluir al menos una letra mayúscula, un número y un caracter especial.</p>
                 <input type="password" name="pass" id="id_1723" class="form-control" placeholder="Ingrese la contraseña"><br/>
             </div>
             <?php
